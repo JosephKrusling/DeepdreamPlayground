@@ -1,4 +1,4 @@
-FROM bvlc/caffe:cpu
+FROM bvlc/caffe:gpu
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 ADD . /mycaffe
