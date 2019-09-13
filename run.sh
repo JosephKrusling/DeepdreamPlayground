@@ -1,0 +1,1 @@
+nvidia-docker kill $(docker ps -q) && docker build -t mycaffe . && docker run -p 8888:8888 -v ~/DeepdreamPlayground/notebooks:/mycaffe/notebooks -v ~/caffe/models:/mycaffe/models -v ~/DeepdreamPlayground/data:/mycaffe/data -d mycaffe
